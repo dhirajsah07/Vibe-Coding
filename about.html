@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Story | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Glassmorphism Header -->
+    <header>
+        <div class="logo"><a href="index.html">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">Brand Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            Cart (<span class="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Slide-out Cart Drawer -->
+    <div id="overlay" class="overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <a href="checkout.html" class="btn" style="display: block; text-align: center; width: 100%;">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-header">
+            <h1>The Aurelia Story</h1>
+            <p style="max-width: 600px; margin: 0 auto;">Redefining modern luxury through uncompromising craftsmanship and timeless silhouettes.</p>
+        </div>
+        
+        <section style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <img src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=1000&q=80" alt="Brand Aesthetics" style="width: 100%; margin-bottom: 3rem;">
+            <h2>Heritage & Vision</h2>
+            <p>Founded on the principles of minimalism and elegance, Aurelia represents the pinnacle of contemporary fashion. Each piece is meticulously designed to harmonize with the wearer's innate grace.</p>
+            <p>Our commitment to sustainability and ethical sourcing is matched only by our dedication to utilizing the world's finest materials—from Italian silks to hand-combed cashmere.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AURELIA. All Rights Reserved. Crafted with Elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

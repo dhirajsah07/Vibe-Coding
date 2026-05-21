@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | AURELIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Glassmorphism Header -->
+    <header>
+        <div class="logo"><a href="index.html">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">Brand Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- No cart icon on checkout page to minimize distractions -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="page-header">
+            <h1>Checkout</h1>
+            <p>Secure your exclusive pieces.</p>
+        </div>
+        
+        <section>
+            <div class="form-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px;">
+                
+                <div>
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">Payment Details</h3>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="ch-name">Name on Card</label>
+                            <input type="text" id="ch-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ch-card">Card Number</label>
+                            <input type="text" id="ch-card" placeholder="XXXX XXXX XXXX XXXX" required>
+                        </div>
+                        <div style="display: flex; gap: 1rem;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="ch-exp">Expiration</label>
+                                <input type="text" id="ch-exp" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="ch-cvv">CVV</label>
+                                <input type="text" id="ch-cvv" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; margin-top: 2rem;">Complete Purchase</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 style="margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">Order Summary</h3>
+                    <div id="order-summary">
+                        <!-- Order summary injected by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AURELIA. All Rights Reserved. Crafted with Elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Luxury Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Glassmorphism Header -->
+    <header>
+        <div class="logo"><a href="index.html">AURELIA</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">Brand Story</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            Cart (<span class="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Slide-out Cart Drawer -->
+    <div id="overlay" class="overlay"></div>
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <a href="checkout.html" class="btn" style="display: block; text-align: center; width: 100%;">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Chat Concierge UI -->
+    <div id="chat-fab" class="chat-fab">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+    </div>
+    
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            Aurelia Concierge
+            <button class="close-chat">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot">Welcome to Aurelia. How may I assist you today?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Inquire about materials, sizing...">
+            <button id="chat-send">Send</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Elevate Your Essence</h1>
+                <p>Discover the New Collection of Italian Silk and Cashmere.</p>
+                <a href="#shop" class="btn">Explore the Collection</a>
+            </div>
+        </section>
+
+        <section id="shop">
+            <h2 class="section-title">The Collection</h2>
+            <div id="products-container" class="products-grid">
+                <!-- Products dynamically loaded here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AURELIA. All Rights Reserved. Crafted with Elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
