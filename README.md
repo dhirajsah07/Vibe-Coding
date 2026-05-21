@@ -48,7 +48,7 @@ To run the application locally on your machine:
    ```bash
    uvicorn backend.main:app --reload
    ```
-4. **Open your browser** and navigate to `http://127.0.0.1:8000` to view the website.
+4. **Open your browser** and navigate to ` https://aurelia-app-6cjogtt4mq-uc.a.run.app/` to view the website.
 
 ## Deployment
 
